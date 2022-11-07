@@ -1,6 +1,6 @@
 Name:       bibata-test
 Version:    2.0.2
-Release:    3%{?dist}
+Release:    4%{?dist}
 Summary:    Most simple RPM package
 License:    GPLv3+
 URL:        https://github.com/ful1e5/Bibata_Cursor
@@ -11,7 +11,7 @@ BuildArch:  noarch
 This is my first RPM package, which does nothing.
 
 %prep
-%setup -q
+%setup -n Bibata
 
 %build
 cat > hello-world.sh <<EOF
