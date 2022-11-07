@@ -1,4 +1,4 @@
-Name:       hello-world
+Name:       bibata-test
 Version:    2.0.2
 Release:    1%{?dist}
 Summary:    Most simple RPM package
