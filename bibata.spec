@@ -1,6 +1,6 @@
 Name:       bibata-test
 Version:    2.0.2
-Release:    5%{?dist}
+Release:    6%{?dist}
 Summary:    Most simple RPM package
 License:    GPLv3+
 URL:        https://github.com/ful1e5/Bibata_Cursor
@@ -14,17 +14,16 @@ This is my first RPM package, which does nothing.
 %setup -c
 
 %build
-cat > hello-world.sh <<EOF
-#!/usr/bin/bash
-echo Hello world
-EOF
 
 %install
-mkdir -p %{buildroot}/usr/bin/
-install -m 755 hello-world.sh %{buildroot}/usr/bin/hello-world.sh
+%__rm -rf %{buildroot}
+%__mkdir -p %{buildroot}%{_datadir}/icons
+
+%clean
+%__rm -rf %{buildroot}
 
 %files
-/usr/bin/hello-world.sh
+%{_datadir}/icons/*
 
 %changelog
 # let's skip this for now
