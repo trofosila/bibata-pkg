@@ -1,6 +1,6 @@
 Name:       bibata-test
 Version:    2.0.2
-Release:    8%{?dist}
+Release:    9%{?dist}
 Summary:    Most simple RPM package
 License:    GPLv3+
 URL:        https://github.com/ful1e5/Bibata_Cursor
@@ -35,7 +35,12 @@ This is my first RPM package, which does nothing.
 %__rm -rf %{buildroot}
 
 %files
-%{_datadir}/icons/*
+%{_datadir}/icons/Bibata-Modern-Amber/
+%{_datadir}/icons/Bibata-Original-Ice/
+%{_datadir}/icons/Bibata-Original-Classic/
+%{_datadir}/icons/Bibata-Modern-Classic/
+%{_datadir}/icons/Bibata-Modern-Ice/
+%{_datadir}/icons/Bibata-Original-Amber/
 
 %changelog
 # let's skip this for now
